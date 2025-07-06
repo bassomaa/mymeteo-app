@@ -29,16 +29,19 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="weather-app-city"></h1>
             <p class="weather-app-details">
-              Tuesday 14:12, scattered clouds
+              <span id="time">Tuesday 14:12</span>,
+              <span id="weather-details"></span>
               <br />
-              Humidity: <strong>66%</strong>, Wind:<strong> 3.13 km/h</strong>
+              Humidity: <strong id="Humidity"></strong>, Wind:<strong
+                id="wind-speed"
+              ></strong>
             </p>
           </div>
           <div class="weather-app-temp">
             <div class="weather-app-icon" id="weather-app-icon">☀️</div>
-            <div class="weather-app-current" id="weather-app-current">12</div>
+            <div class="weather-app-current" id="weather-app-current"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
