@@ -10,6 +10,11 @@ function refrechWeather(response) {
   let weatherInfo = response.data.condition.description;
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconImg = document.querySelector("#icon");
+  iconImg.innerHTML = `<img
+  src="${response.data.condition.icon_url}"
+  id ="weather-app-icon"
+  />`;
 
   currentWeatherState.innerHTML = weatherInfo;
   currentHumidity.innerHTML = humidity;
